@@ -1,3 +1,19 @@
+var randomColors = [
+    "red",
+    "blue",
+    "green",
+    "orange",
+    "aqua",
+    "violet",
+    "indigo",
+];
+// program to get a random item from an array
+function getRandomColor() {
+    var randomIndex = Math.floor(Math.random() * randomColors.length);
+    var item = randomColors[randomIndex];
+    return item;
+}
+//UI Buttons
 var boom = document.getElementById("boom");
 var clap = document.getElementById("clap");
 var hihat = document.getElementById("hihat");
@@ -21,38 +37,47 @@ var tomSound = new Audio("./sounds/tom.wav");
 boom.addEventListener("click", () => {
     boomSound.play();
     boomSound.currentTime = 0;
-    // tp //play it again and again with each press
+    boom.style.borderColor = getRandomColor();
+    // to play it again and again with each press
 });
 clap.addEventListener("click", () => {
     clapSound.play();
-    clapSound.currentTime = 0; // tp play it again and again with each press
+    clapSound.currentTime = 0;
+    clap.style.borderColor = getRandomColor();
 });
 hihat.addEventListener("click", () => {
     hihatSound.play();
-    hihatSound.currentTime = 0; // tp play it again and again with each press
+    hihatSound.currentTime = 0;
+    hihat.style.borderColor = getRandomColor();
 });
 kick.addEventListener("click", () => {
     kickSound.play();
-    kickSound.currentTime = 0; // tp play it again and again with each press
+    kickSound.currentTime = 0;
+    kick.style.borderColor = getRandomColor();
 });
 openhat.addEventListener("click", () => {
     openhatSound.play();
-    openhatSound.currentTime = 0; // tp play it again and again with each press
+    openhatSound.currentTime = 0;
+    openhat.style.borderColor = getRandomColor();
 });
 ride.addEventListener("click", () => {
     rideSound.play();
-    rideSound.currentTime = 0; // tp play it again and again with each press
+    rideSound.currentTime = 0;
+    ride.style.borderColor = getRandomColor();
 });
 snare.addEventListener("click", () => {
     snareSound.play();
-    snareSound.currentTime = 0; // tp play it again and again with each press
+    snareSound.currentTime = 0;
+    snare.style.borderColor = getRandomColor();
 });
 tink.addEventListener("click", () => {
     tinkSound.play();
-    tinkSound.currentTime = 0; // tp play it again and again with each press
+    tinkSound.currentTime = 0;
+    tink.style.borderColor = getRandomColor();
 });
 tom.addEventListener("click", () => {
     tomSound.play();
-    tomSound.currentTime = 0; // tp play it again and again with each press
+    tomSound.currentTime = 0;
+    tom.style.borderColor = getRandomColor();
 });
 // window.addEventListener("keydown", (e) => console.log(e.code))

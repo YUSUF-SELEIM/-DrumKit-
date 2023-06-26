@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: #27374D;
+    background-color: #27374d;
     display: flex;
     flex-direction: column;
     gap: 170px;
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    color: #DDE6ED;
+    color: #dde6ed;
     font-size: 60px;
     padding: 30px;
     text-align: center;
@@ -30,7 +30,13 @@ h1 {
 .btn {
     padding: 50px;
     font-family: "Press Start 2P", cursive;
-    background-color: #9DB2BF;
-    color: #27374D;
+    background-color: #9db2bf;
+    color: #27374d;
     border-radius: 12px;
+    border-color: gold;
+}
+
+.btn:active {
+    transform: scale(1.1) perspective(1px);
+    border: gold 5px solid;
 }
