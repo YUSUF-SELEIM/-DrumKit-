@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #27374D;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+    align-items: center;
+}
+
+h1 {
+    color: #DDE6ED;
+    font-size: 60px;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 50px;
+    font-family: "Press Start 2P", cursive;
+    background-color: #9DB2BF;
+    color: #27374D;
+    border-radius: 12px;
+}
